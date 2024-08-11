@@ -27,7 +27,7 @@ Mno children
 ijk men
 4
 Output:
-310*/
+3 1 0*/
 
 import java.util.*;
 public class Hello {
