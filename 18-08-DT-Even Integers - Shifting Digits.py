@@ -2,9 +2,13 @@
 that can be formed by shifting the digits to the right in N.
 - At least 1 even digit is always present in N.
 • The resulting even integers must be printed without leading zeros.
-Example InBJt/Output :
+
+Example Input/Output :
+
 Input
 4763
+
+Output
 3476 7634
 '''
 
@@ -20,4 +24,4 @@ for i in range(len_number):
     if(even_number_checker(num)):
         print(num,end=" ")
     number=number[-1]+number[:len_number-1]
-    
+
