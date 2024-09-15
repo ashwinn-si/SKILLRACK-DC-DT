@@ -20,7 +20,7 @@ Type d: 2 candies
 Type b: I candy
 The value of N is 3, so the boy has 3 friends.*/
 
-//! 7 -> passed 7 -> failed
+
 import java.util.*;
 public class Hello {
 
@@ -29,6 +29,7 @@ public class Hello {
 		Scanner sc=new Scanner(System.in);
 		HashMap<Character,Integer> hash=new HashMap<Character,Integer>();
 		String str=sc.nextLine();
+		int N=sc.nextInt();
 		for(int i=0;i<str.length();i++){
 		    char ch=Character.toLowerCase(str.charAt(i));
 		    hash.put(ch,hash.getOrDefault(ch,0)+1);
@@ -36,17 +37,12 @@ public class Hello {
 		int odd_count=0;
 		int even_count=0;
 		for(Character key:hash.keySet()){
-		    if(hash.get(key)%2==0){
-		        even_count++;
-		    }else{
-		        odd_count++;
-		    }
+		    if(hash.get(key)>N){ //! Consider there are 5 candies in one falvour and 4 students to be distributed then atleast one will get same candy 
+		        System.out.printf("NO");
+				return;
+			}
 		    
 		}
-		if(even_count==odd_count){
-		    System.out.printf("YES");
-		}else{
-		    System.out.printf("NO");
-		}
+		System.out.printf("YES");
 	}
 }
