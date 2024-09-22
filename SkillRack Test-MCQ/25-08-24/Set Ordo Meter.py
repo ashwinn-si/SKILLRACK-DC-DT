@@ -34,3 +34,41 @@ while(''.join(i for i in value) !=N):
         print(''.join(i for i in value))
         value[index]=str(int(value[index])+1)
 print(N)
+
+'''
+C SOLUTION
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+    char number[1008];
+    scanf("%s",number);
+    if(5 > strlen(number)){
+        char temp_zero[1008]="";
+        char temp_zero_char='0';
+        for(int i=1;i<=(5-strlen(number));i++){
+            strncat(temp_zero,&temp_zero_char,1);
+        }
+        strcat(temp_zero,number);
+        strcpy(number,temp_zero);
+    }
+    int a[1008];
+    int ai=0;
+    int zero_array[5]={0};
+    for(int i=strlen(number)-1;i>=0;i--){
+        a[ai++]=(number[i] - '0');
+    }
+    for(int i=0;i<5;i++){
+        while(zero_array[i]<a[i]){
+            for(int j=ai-1;j>=0;j--){
+                printf("%d",zero_array[j]);
+            }
+            printf("\n");
+            zero_array[i]++;
+        }
+    }
+    printf("%s",number);
+    return 0;
+}
+'''
