@@ -16,6 +16,7 @@ Explanation:
 The 5 term in the above sequence is 2.
 So 2 is printed as the output.
 '''
+
 n=int(input())
 power_2=2
 while(n>power_2):
