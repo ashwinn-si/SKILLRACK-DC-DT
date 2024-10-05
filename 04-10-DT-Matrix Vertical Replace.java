@@ -61,7 +61,7 @@ public class Hello {
 		//changing the first col alone
 		int curr_r=target_R;
 		int curr_c=target_C;
-		for(int i=curr_r;i<R && index<target.length();i++){
+		for(int i=curr_r;i<R && index<target.length();i++){ //!those condition checker
 		    matrix[i][curr_c]=target.charAt(index);
 		    index++;
 		}
@@ -72,7 +72,7 @@ public class Hello {
 		    if(curr_c==C){
 		        curr_c=0;
 		    }
-		    for(int i=0;i<R && index<target.length();i++){
+		    for(int i=0;i<R && index<target.length();i++){ //!those condition checker
 		        matrix[i][curr_c]=target.charAt(index);
 		        index++;
 		    }
