@@ -1,3 +1,31 @@
+/*The govemment of India plans to build a road in a city. The government also plans to acquire some buildings to start the construction. The program must accept an integer matrix of size WN representing the cost to acquire the buildings in the city. Azeo value in the matrix indicates that the building
+cannot be acquired by the government
+The rules for road construction in the city are given below.
+- The road always starts from the first row and ends at the last row.
+- No more than one building in a row can be acquired by the government
+The program must print the minimum cost M to acquire buildings for road construction in the given city as the output.
+Ngte: It is always possible to build a road in the given city.
+
+Input:
+
+4
+0 0 2 0
+1 3 4 5
+5 0 7 0
+8 1 2 3
+
+Output
+11
+
+Explanation:
+The buildings acquired by the government with the minimum cost are highlighted below.
+0 0 2 0
+1 3 4 5
+5 0 7 0
+8 1 2 3
+The minimum cost is 11 (2+3+5+1) which is printed as the output.
+*/
+
 import java.util.*;
 public class Hello {
     static Long dp[][];
