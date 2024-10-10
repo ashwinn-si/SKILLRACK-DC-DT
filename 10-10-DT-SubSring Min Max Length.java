@@ -30,7 +30,7 @@ public class Hello {
         int uniqCount=sc.nextInt();
         int minLen=sc.nextInt();
         int maxLen=sc.nextInt();
-        for(int i=0;i<string.length()-maxLen;i++){
+        for(int i=0;i<string.length()-maxLen+1;i++){
             for(int j=minLen;j<=maxLen;j++){
                 if(uniqStringFinder(string.substring(i,i+j))==uniqCount){
                     System.out.print("YES");
