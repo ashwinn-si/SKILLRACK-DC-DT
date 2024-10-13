@@ -50,10 +50,8 @@ public class Hello {
 		        }else{
 		            System.out.printf("%c ",matrix[i][j]);
 		        }
-		        
 		    }
 		    System.out.println();
 		}
-
 	}
 }
