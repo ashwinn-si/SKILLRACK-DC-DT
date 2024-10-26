@@ -17,7 +17,6 @@ alphabet.
 
 Input:
 5 8 10
-
 Output:
 eifkgmhojq
 
