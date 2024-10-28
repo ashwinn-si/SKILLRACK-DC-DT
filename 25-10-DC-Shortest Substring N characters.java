@@ -33,7 +33,7 @@ public class Main {
   		
   		int stPointer=0;
   		int endPointer=1;
-  		try{
+
   		while(endPointer!=S.length()-1 && stPointer !=S.length()-1){
   		  
   		  
@@ -52,11 +52,13 @@ public class Main {
   		  }
   		  
   		  
-  		}}
-  		catch(StringIndexOutOfBoundsException e){
-  		  System.out.printf("%d %d",stPointer,endPointer);
   		}
-  		System.out.print(result);
+
+		if(result.length()==S.length()+1){
+			System.out.print("-1");
+		}else{
+  			System.out.print(result);
+		}
   }
   static boolean checker (String str , char charSet[]){
 	    for(char ch : charSet){
