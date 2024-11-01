@@ -1,26 +1,4 @@
-/*The program must accept a character matrix of size RxC arri the positions of two cells Cl
-YI), Q (X2. Y2) as the input The program must print the characters from the cell Cl to the cell
-C2 in vertical zig-zag direction. The vertical zig-zag traversal from the cell Cl to the cell C2 is
-explained below.
-- The traversal always begins from the cell Cl and it moves towards the bottom in the same
-column K.
-- Then it rnoves from bottom to top in the next column 1.
-- Then it rnoves from top to bottom in the next column K+2.
-Similarly. it moves in vertical zig.zag direction until it reaches the cell Q.
 
-Input
-5 7
-C m D k i t d
-E t q C e o g
-i A q q b c D
-F y m z g g o
-g h a I A I s
-4 2
-3 6
-
-Output
-yhamqqDkCqzIAgbeitoc
-*/
 
 import java.util.*;
 public class Hello {
