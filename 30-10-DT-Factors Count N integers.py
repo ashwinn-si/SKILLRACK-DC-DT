@@ -30,5 +30,3 @@ The factor 17 occurs once.
 After sorting the factors based on the given conditions, the factors are
 1(5) 2(3) 3(3) 4(2) 6(2) 8(1) 9(1) 12(1) 17(1)
 '''
-
-
