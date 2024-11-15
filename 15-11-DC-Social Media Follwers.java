@@ -22,6 +22,7 @@ Explanation:
 The user A has no followers. So the count is 0.
 The user C has 2 followers M and A. So the count is 2.
 */
+
 import java.util.*;
 public class Hello {
 
