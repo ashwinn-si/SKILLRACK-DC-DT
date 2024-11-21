@@ -1,3 +1,26 @@
+/* 
+The program must accept a String S and print the Characters in a line till a character has repeated
+continucmasty (occurred rnore than once continuously), Then the program must gnnt the remajnjng
+characters in the next line till a character has repeated continuously. This logic must be repeated till all
+characters in the string S are printed. The minimum number ot asterisks must padded to lines so that all
+lines are equal in length.
+
+Input
+skillrack
+
+Output
+skill
+rack*
+
+Here S "skillrack-.
+The character I is the continuously repeated character,
+So Skill is printed in the first line.
+Then the remaining characters are printed in the second line.
+The maximum number of characters printed on the lines is 5.
+Hence an asterisk iS padded to the second line to make the length as S.
+So rack* is printed in the second line.
+*/
+
 import java.util.*;
 public class Hello {
 
