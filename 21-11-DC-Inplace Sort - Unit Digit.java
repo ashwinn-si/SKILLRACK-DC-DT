@@ -20,7 +20,7 @@ Hence the output is
 32 78 15 42 62 35 65 95 95 46 66 76
 */
 
-[10:05 pm, 21/11/2024] ASHWIN SI: import java.util.*;
+import java.util.*;
 public class Hello {
 
     public static void main(String[] args) {
