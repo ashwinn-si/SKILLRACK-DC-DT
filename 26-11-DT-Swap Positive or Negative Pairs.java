@@ -1,5 +1,23 @@
-import java.util.*;
+/*
+The program must accept N integers as the input.
+The program must swap every two positive
+integers and every two negative integers among
+the N integers. If the number of positive or
+negative integers is odd. then the last occurring
+positive or negative integer remains the same in its
+position. Finally. the program must print the N
+revised integers as the output.
+Each integer value is always non-zero.
 
+Input:
+6
+93 91 -80 68 -39 24
+
+Output:
+91 93 -39 24 -80 68
+*/
+
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
